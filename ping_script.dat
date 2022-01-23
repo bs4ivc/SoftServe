@@ -1,5 +1,0 @@
-
-ping -n 1 www.google.com | find "TTL=" >nul 
-if errorlevel 1 ( 
-    echo Computer/Server Offline (www.google.com)
-)
