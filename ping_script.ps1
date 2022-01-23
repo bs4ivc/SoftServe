@@ -1,4 +1,4 @@
-$Computer = Read-Host -Prompt "8.8.8.8"
+$Computer = Read-Host -Prompt "Enter IP address"
 $Ping = Test-Connection -Count 10 -ComputerName $Computer
 ForEach ($Result in $Ping) {
   If ($Result.ResponseTime -lt 100) {
